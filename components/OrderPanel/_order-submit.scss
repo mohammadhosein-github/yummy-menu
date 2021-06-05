@@ -1,0 +1,41 @@
+.order-submit {
+  border-top: 1px solid #1b5583;
+  padding-top: 15px;
+  margin-top: 10;
+  margin: 0 10px;
+
+  .cost-items-container {
+    .cost-item {
+      .item-title,
+      .item-cost {
+        font-weight: bold;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+      }
+
+      .item-title {
+        font-size: 14px;
+      }
+      .item-cost {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .checkout-btn {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #fa2600;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  &.dark-theme {
+    .cost-items-container {
+      color: #ffffff;
+    }
+  }
+}

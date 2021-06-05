@@ -1,0 +1,140 @@
+.item-card {
+  padding: 30px 0;
+  margin-right: 30px;
+  display: inline-block;
+
+  &:first-child {
+    margin-left: 35px;
+  }
+
+  .background-shape {
+    height: auto;
+    max-height: 350px;
+    @include drop-shadow(5px, 0px, 15px, rgba(0, 0, 0, 0.1));
+  }
+
+  .card-content {
+    .item-image {
+      margin-bottom: 30px;
+      img {
+        max-width: 55%;
+        height: 140px;
+        transform: translateX(20%);
+        @include drop-shadow(5px, 5px, 10px, rgba(0, 0, 0, 0.2));
+      }
+    }
+    .item-text {
+      width: 78%;
+      padding-left: 25px;
+      white-space: pre-wrap;
+
+      .title {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+      }
+      .description {
+        font-size: 1.2rem;
+        line-height: 20px;
+      }
+    }
+
+    .add-button {
+      padding: 15px 30px;
+      position: absolute;
+      bottom: 10px;
+      right: 0;
+      border: 2px solid transparent;
+      border-radius: 30px;
+      border-top-left-radius: 0;
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+
+    .item-counter {
+      position: absolute;
+      top: 50%;
+      right: 16px;
+
+      .increase,
+      .decrease {
+        img {
+          width: 25px;
+        }
+      }
+
+      .increase {
+        margin-bottom: 10px;
+      }
+
+      .order-number {
+        margin-bottom: 7px;
+        font-size: 16px;
+      }
+    }
+
+    .favorite-button {
+      position: absolute;
+      top: 55px;
+      right: 20px;
+
+      svg {
+        width: 35px;
+        height: 35px;
+        @include drop-shadow(2px, 6px, 8px, rgba(0, 0, 0, 0.25));
+        transition: 0.2s ease-in-out;
+
+        &:active {
+          transform: scale(1.2);
+        }
+
+        circle {
+          fill: #fa2600;
+        }
+        path {
+          fill: #ffffff;
+        }
+
+        &.active {
+          circle {
+            fill: #ffffff;
+            stroke: rgba(0, 0, 0, 0.15);
+            stroke-width: 2px;
+          }
+          path {
+            fill: #fa2600;
+          }
+        }
+      }
+    }
+  }
+
+  &.dark-theme {
+    .card-content {
+      .item-text {
+        .title,
+        .description {
+          color: #ffffff;
+        }
+      }
+
+      .add-button {
+        color: #000000;
+        background-color: #ffffff;
+        font-weight: bold;
+      }
+
+      .item-counter {
+        .increase,
+        .decrease {
+          img {
+            @include drop-shadow(-2px, -2px, 5px, rgba(255, 255, 255, 0.1));
+          }
+        }
+
+        .order-number {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

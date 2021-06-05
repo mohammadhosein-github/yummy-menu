@@ -1,0 +1,269 @@
+.test-border {
+  border: 1px solid red;
+}
+
+.test-margin-y {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.test-margin-x {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.test-border-2 {
+  border: 1px solid blue;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#__next {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Comfortaa", Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box !important;
+}
+
+body {
+  background-image: url("/design-utils/main-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+#__next {
+  background: rgb(237, 242, 250);
+  background-image: $light_theme_bg;
+
+  @include sm-size() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 390px;
+    height: 90vh;
+    max-height: 830px;
+    border: 1px solid rgba(#000000, 0.4);
+    border-radius: 20px;
+    @include drop-shadow(0, 0, 50px, rgba(0, 0, 0, 0.2));
+    overflow: hidden;
+  }
+}
+
+.page-container {
+  background: red;
+  background-image: $light_theme_bg !important;
+
+  &.dark-theme {
+    background: red;
+    background-image: $dark_theme_bg !important;
+  }
+}
+
+.secondary-font {
+  font-family: -apple-system, BlinkMacSystemFont, "Caveat", Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Comfortaa", Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.page-padding {
+  padding: 20px 30px 35px;
+}
+
+.light-mode {
+  color: $light_theme_primary_text_color !important;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden !important;
+}
+
+.overflow-y-auto {
+  overflow-y: auto !important;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden !important;
+}
+
+.overflow-x-auto {
+  overflow-x: auto !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.d-flex {
+  display: flex !important;
+
+  &.justify-content-center {
+    justify-content: center !important;
+  }
+
+  &.align-items-center {
+    align-items: center !important;
+  }
+
+  &.justify-space-between {
+    justify-content: space-between !important;
+  }
+
+  &.flex-column {
+    flex-direction: column !important;
+  }
+}
+
+.flex-fill {
+  flex-grow: 1 !important;
+}
+
+.d-grid {
+  display: grid !important;
+}
+
+.p-relative {
+  position: relative !important;
+}
+
+.p-absolute {
+  position: absolute !important;
+
+  &.from-top {
+    top: 0 !important;
+  }
+  &.from-bottom {
+    bottom: 0 !important;
+  }
+  &.from-left {
+    left: 0 !important;
+  }
+  &.from-right {
+    right: 0 !important;
+  }
+
+  &.to-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.cover-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.text-color-light {
+  color: #ffffff !important;
+}
+
+.text-cap {
+  text-transform: capitalize !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-weight-bold {
+  font-weight: bold !important;
+}
+
+.text-weight-normal {
+  font-weight: normal !important;
+}
+
+.text-weight-light {
+  font-weight: 300 !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.z-index-base {
+  z-index: 1;
+}
+
+.z-index-l1 {
+  z-index: 100;
+}
+
+.z-index-l2 {
+  z-index: 500;
+}
+
+.z-index-l3 {
+  z-index: 1000;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-default {
+  cursor: default;
+}

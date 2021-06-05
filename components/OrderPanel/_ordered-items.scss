@@ -1,0 +1,80 @@
+.ordered-items {
+  padding: 0 25px 0 10px;
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-container {
+    padding-top: 20px;
+    margin-bottom: 15px;
+
+    .bg-shape {
+      @include drop-shadow(8px, 3px, 10px, rgba(0, 0, 0, 0.1));
+    }
+
+    .card-content {
+      .item-image {
+        margin-left: 15px;
+        width: 85px;
+
+        img {
+          max-width: 85px;
+          max-height: 75px;
+        }
+      }
+
+      .item-title {
+        font-size: 18px;
+        margin-bottom: 6px;
+      }
+
+      .counter {
+        width: 70px;
+        font-size: 14px;
+
+        .increase,
+        .decrease {
+          img {
+            width: 16px;
+          }
+        }
+      }
+
+      .item-cost {
+        bottom: 18px;
+        right: 10px;
+        padding: 10px 18px 0 0;
+        font-size: 18px;
+
+        .discount {
+          font-size: 8px;
+          color: #fa2600;
+        }
+      }
+
+      .remove-btn {
+        top: 13px;
+        right: -8px;
+        width: 22px;
+      }
+    }
+  }
+
+  &.dark-theme {
+    .title {
+      color: #ffffff;
+    }
+
+    .card-container {
+      .card-content {
+        .item-title,
+        .counter,
+        .item-cost {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.cards-menu {
+  .cards-categories {
+    padding: 0 35px;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    @include mobile-scrollbar();
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .category {
+      display: inline-block;
+      font-size: 13px;
+      text-align: center;
+      text-transform: capitalize;
+      padding: 10px 15px;
+      transform: translateY(0);
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+
+      &.active {
+        position: relative;
+        font-size: 15px;
+        font-weight: bold;
+        transform: translateY(-10px);
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: $secondary_color;
+        }
+      }
+    }
+  }
+
+  .cards-container {
+    padding: 25px 0 30px;
+    flex: 1 1 auto;
+    height: 450px;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    @include mobile-scrollbar();
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @include sm-size {
+      &::-webkit-scrollbar {
+        display: unset;
+      }
+
+      overflow-x: hidden;
+      &:hover {
+        overflow-x: auto;
+      }
+      @include desktop-scrollbar-light();
+    }
+  }
+
+  &.dark-theme {
+    .cards-categories {
+      .category {
+        color: #ffffff;
+      }
+    }
+
+    .cards-container {
+      @include sm-size {
+        @include desktop-scrollbar-dark();
+      }
+    }
+  }
+}

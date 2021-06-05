@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" viewBox="0 0 125 125">
+  <g id="remove" transform="translate(0 -0.07)">
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="112.539" height="112.572" rx="45" transform="translate(6.247 6.947)" fill="#f7dfdf"/>
+    <g id="Group_23" data-name="Group 23" transform="translate(0 0.07)">
+      <g id="Group_22" data-name="Group 22" transform="translate(0 0)">
+        <path id="Path_7" data-name="Path 7" d="M106.721,18.353a62.5,62.5,0,1,0,0,88.431A62.582,62.582,0,0,0,106.721,18.353ZM99.874,99.935a52.839,52.839,0,1,1,0-74.733A52.884,52.884,0,0,1,99.874,99.935Z" transform="translate(0 -0.07)" fill="#fa2600"/>
+      </g>
+    </g>
+    <g id="Group_25" data-name="Group 25" transform="translate(40.844 40.322)">
+      <g id="Group_24" data-name="Group 24">
+        <path id="Path_8" data-name="Path 8" d="M209.759,200.437l-13.7-13.68,13.7-13.68a4.84,4.84,0,0,0-6.843-6.847l-13.709,13.69L175.5,166.229a4.84,4.84,0,1,0-6.842,6.847l13.7,13.68-13.7,13.68a4.84,4.84,0,0,0,6.842,6.847l13.709-13.69,13.709,13.69a4.84,4.84,0,1,0,6.842-6.847Z" transform="translate(-167.236 -164.813)" fill="#fa2600"/>
+      </g>
+    </g>
+  </g>
+</svg>

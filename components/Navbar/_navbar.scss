@@ -1,0 +1,51 @@
+.navbar {
+  padding: 20px;
+
+  &::after {
+    display: table;
+    content: " ";
+    clear: both;
+  }
+
+  .left-side {
+    float: left;
+    padding-left: 10px;
+
+    .company-logo {
+      width: 50px;
+    }
+  }
+
+  .right-side {
+    float: right;
+    padding-top: 5px;
+
+    .shopping-card {
+      img {
+        width: 30px;
+      }
+
+      .orders-number {
+        top: -6px;
+        right: -7px;
+        width: 18px;
+        height: 18px;
+        background-color: $secondary_color;
+        border-radius: 50%;
+
+        span {
+          font-size: 11px;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+
+  &.dark-theme {
+    .shopping-card {
+      img {
+        filter: invert(1);
+      }
+    }
+  }
+}

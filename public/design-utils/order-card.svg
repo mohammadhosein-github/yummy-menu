@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="503" height="118.248" viewBox="0 0 503 118.248">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="1" x2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f2f7ff"/>
+      <stop offset="1" stop-color="#e0ecff"/>
+    </linearGradient>
+    <filter id="order-card" x="0" y="0" width="503" height="118.248" filterUnits="userSpaceOnUse">
+      <feOffset dx="-1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#order-card)">
+    <path id="order-card-2" data-name="order-card" d="M18.5,2.779S133.752-4,249-4,479.5,2.779,479.5,2.779c9.792,0,17.731,7.588,17.731,16.948,0,0,1.773,16.948,1.773,33.9s-1.773,33.9-1.773,33.9c0,9.36-7.938,16.948-17.731,16.948,0,0-115.248,6.779-230.5,6.779s-230.5-6.779-230.5-6.779c-9.792,0-17.73-7.588-17.73-16.948,0,0-1.773-16.948-1.773-33.9s1.773-33.9,1.773-33.9C.773,10.367,8.711,2.779,18.5,2.779Z" transform="translate(3.5 5.5)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

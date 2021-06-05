@@ -1,0 +1,27 @@
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&display=swap");
+
+@import "./breakpoints";
+@import "./variables";
+@import "./mixins";
+@import "./transitions";
+@import "./presets";
+
+//pages
+@import "./pages/home";
+@import "./pages/auth";
+@import "./pages/profile";
+@import "./pages/order";
+
+//components
+@import "../components/Loading/loading";
+@import "../components/Alerts/alert";
+@import "../components/Navbar/navbar";
+@import "../components/Navbar/Dropdown/dropdown";
+@import "../components/TypeMenu/type-menu";
+@import "../components/CardsMenu/cards-menu";
+@import "../components/CardsMenu/ItemCard/item-card";
+@import "../components/AuthFormPanel/auth-form-panel";
+@import "../components/UserInfoPanel/user-info-panel";
+@import "../components/OrderPanel/ordered-items";
+@import "../components/OrderPanel/order-submit";

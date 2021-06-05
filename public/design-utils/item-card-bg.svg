@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="503" height="606.448" viewBox="0 0 503 606.448">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.611" y1="0.295" x2="0.019" y2="0.922" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f2f7ff"/>
+      <stop offset="1" stop-color="#e0ecff"/>
+    </linearGradient>
+    <filter id="food-card" x="0" y="0" width="503" height="606.448" filterUnits="userSpaceOnUse">
+      <feOffset dx="-1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#food-card)">
+    <path id="food-card-2" data-name="food-card" d="M41.724,6.309S140.862-10,240-10,438.276,6.309,438.276,6.309c19.044,0,34.483,14.6,34.483,32.619,0,0,17.241,126.4,17.241,252.8s-17.241,252.8-17.241,252.8c0,18.015-15.438,32.619-34.483,32.619,0,0-99.138,16.309-198.276,16.309S41.724,577.139,41.724,577.139c-19.044,0-34.483-14.6-34.483-32.619,0,0-17.241-126.4-17.241-252.8S7.241,38.928,7.241,38.928C7.241,20.913,22.68,6.309,41.724,6.309Z" transform="translate(12.5 11.5)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

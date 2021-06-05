@@ -1,0 +1,56 @@
+$info_card_border_color: #6baed5;
+$edit_btn_light_theme: #336cbc;
+$edit_btn_dark_theme: #5995e9;
+$submit_btn_color: #336cbc;
+
+.user-page {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+
+  .section-container {
+    padding: 25px 35px 35px;
+    overflow-y: auto;
+
+    .submit-buttons {
+      button {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid transparent;
+        color: $secondary_color;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .submit-btn {
+        color: #fff;
+        background-color: lighten($submit_btn_color, 8);
+      }
+
+      .delete-btn {
+        border-color: $secondary_color;
+        color: $secondary_color;
+      }
+    }
+  }
+
+  &.dark-theme {
+    .section-container {
+      .submit-buttons {
+        .submit-btn {
+          background-color: $submit_btn_color;
+        }
+
+        .delete-btn {
+          border-color: lighten($secondary_color, 10);
+          color: lighten($secondary_color, 10);
+        }
+      }
+    }
+  }
+}
